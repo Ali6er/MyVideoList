@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.dashboard.AddVideoFragment"
+    android:background="#7D3EED"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/tv_title_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@color/white"
+        android:hint="Add title of video"
+        android:inputType="textPersonName|textCapSentences"
+        android:minHeight="48dp"
+        android:textColor="@color/black"
+
+        android:textSize="24sp" />
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/tv_title_video"
+        android:layout_marginTop="18dp"/>
+
+    <Button
+        android:id="@+id/btn_upload_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/videoView"
+        android:layout_marginTop="20dp"
+        android:text="Upload video file"
+        android:textAllCaps="false"
+        android:backgroundTint="#4CAF50"
+        android:textStyle="bold"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/pic_video_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/baseline_article_24" />
+
+
+
+
+</RelativeLayout>
